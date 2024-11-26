@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="home,registration,confirmation.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="confirmation.html">
+            <h2>Event Registration Form</h2>
+
+            <label for="fullname">Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="event">Event Type</label>
+            <select id="event" name="event" required>
+                <option value="" disabled selected>Select an event</option>
+                <option value="workshop">Workshop</option>
+                <option value="conference">Conference</option>
+                <option value="webinar">Webinar</option>
+            </select>
+
+            <button type="submit" onclick="window.location.href='confirmation.html'">Confirmation</button>
+        </form>
+
+        <button class="button-link" onclick="window.location.href='home.html'" id="back">Back to Home</button>
+
+    </div>
+</body>
+
+</html>
